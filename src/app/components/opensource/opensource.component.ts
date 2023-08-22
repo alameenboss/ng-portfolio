@@ -9,6 +9,14 @@ export class OpensourceComponent {
 
   projects = [
     {
+      title: 'Angular Portfolio',
+      description:'This is an angular application showcasing the portfolio',
+      sourcecode: 'https://github.com/alameenboss/ng-portfolio',
+      techused:["Angular","Angular material design","typescript"],
+      features:["Sidenav","angular routing","timeline"],
+      demourl:'https://alameens-cv.netlify.app/',
+    },
+    {
       title: 'Next Car Hub',
       description:'This is a next.js based application, showcasing the car models with filtering, sorting.view car details',
       sourcecode: 'https://github.com/alameenboss/next-car-hub',

@@ -44,7 +44,7 @@ export class ExperienceComponent {
     },
     {
       "type": "type1",
-      "date": "Dec’19 - Oct’12",
+      "date": "Dec’09 - Oct’12",
       "title": "Software Developer",
       "description": "Ortech System, Mettupalayam",
       "companyurl":''

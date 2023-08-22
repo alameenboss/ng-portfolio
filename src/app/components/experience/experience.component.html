@@ -1,16 +1,15 @@
 <div class="timeline">
-  <div *ngFor="let experience of experiences; let i = index" class="event animated fadeInUp" [ngClass]="'delay-' + (4 - i) + 's event--' + 
-    experience.type">
-    <div class="event_icon">
+  <div *ngFor="let experience of experiences; let i = index" class="timeline__experience animated fadeInUp" [ngClass]="'delay-' + (4 - i) + 's timeline__experience--' + experience.type">
+    <div class="timeline__experience__icon">
     </div>
-    <div class="event_date">
+    <div class="timeline__experience__date">
       {{ experience.date }}
     </div>
-    <div class="event_content">
-      <div class="event_title">
+    <div class="timeline__experience__content">
+      <div class="timeline__experience__title">
         {{ experience.title }}
       </div>
-      <div class="event_description">
+      <div class="timeline__experience__description">
         <p>
           <a href="{{experience.companyurl}}" target="_blank">{{ experience.description }}</a>
         </p>
