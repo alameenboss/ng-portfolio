@@ -1,0 +1,23 @@
+<div class="courses-container">
+    <div class="course" *ngFor="let project of projects">
+        <div class="course-preview">
+            <h2>{{project.title}}</h2>
+            <a href="{{project.sourcecode}}" *ngIf="project.sourcecode" target="_blank">
+                Git source</a>
+            &nbsp;
+            <a href="{{project.demourl}}" *ngIf="project.demourl" target="_blank">
+                Demo</a>
+        </div>
+        <div class="course-info">
+            <h4 *ngIf="project.description">{{project.description}}</h4>
+            <ul *ngIf="project.features.length>0">
+                <li style="list-style: none;"><strong>Features</strong></li>
+                <li *ngFor="let feature of project.features">{{feature}}</li>
+            </ul>
+            <ul *ngIf="project.techused" class="tech-used">
+                <li><strong>Technology Stack</strong></li>
+                <li *ngFor="let tech of project.techused">{{tech}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

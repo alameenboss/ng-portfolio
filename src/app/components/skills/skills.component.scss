@@ -1,0 +1,23 @@
+.skillset-container {
+    padding: 1rem;
+    margin: 10px;
+
+    h2 {
+        text-align: center;
+        border-bottom: 1px solid gray;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-gap: 1rem;
+
+        .skill {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<div style="text-align: center;">
+    <h2>Major Projects Executed</h2>
+    <hr />
+</div>
+<ng-container *ngFor="let project of marjorProjects">
+    <div class="container mat-elevation-z8">
+        <div class="project-name">
+            <h2> {{project.projectName}} </h2>
+            <a *ngIf="project.link" href="{{project.link}}" target="_blank">
+                {{project.link}}
+            </a>
+        </div>
+        <div *ngIf="project.role"><strong>Role :</strong> {{project.role}}</div>
+        <div *ngIf="project.company"><strong>Company :</strong> {{project.company}}</div>
+        <div *ngIf="project.duration"><strong>Duration :</strong> {{project.duration}}</div>
+        <div *ngIf="project.clientdetails"><strong>Client Details :</strong> {{project.clientdetails}}</div>
+        <div *ngIf="project.teamsize"><strong>Team Size :</strong> {{project.teamsize}}</div>
+        <div *ngIf="project.description"><strong>Description :</strong> {{project.description}}</div>
+        <div *ngIf="project.roledescription"><strong>Role Description:</strong> {{project.roledescription}}</div>
+        <div *ngIf="project.accomplishment"><strong>Accomplishment :</strong> {{project.accomplishment}}</div>
+        <div *ngIf="project.technologyused">
+            <strong>Technology :</strong>
+            <span class="tech-used">
+                <span class="tech " *ngFor="let tech of project.technologyused">
+                    {{tech}}
+                </span>
+            </span>
+        </div>
+    </div>
+</ng-container>

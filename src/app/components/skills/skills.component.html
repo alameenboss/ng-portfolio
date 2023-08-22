@@ -1,0 +1,8 @@
+<div class="skillset-container mat-elevation-z8" *ngFor="let skillset of skillsets">
+    <h2>{{skillset.type}}</h2>
+    <div class="grid-container ">
+        <div class="skill" *ngFor="let skill of skillset.skills">
+            {{skill.title}}
+        </div>
+    </div>
+</div>
